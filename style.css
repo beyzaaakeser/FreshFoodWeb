@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-color: black;
+  --secondary-color: crimson;
+}
+
+#logo img {
+  width: 190px;
+  margin-top: 3px;
+}
+
+.nav-item .nav-link {
+  color: black;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--secondary-color);
+}
+
+#navbar input:focus {
+  border: 1px solid var(--secondary-color);
+  box-shadow: none;
+}
