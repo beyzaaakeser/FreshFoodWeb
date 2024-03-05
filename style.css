@@ -13,8 +13,8 @@
   --main-color: black;
   --secondary-color: crimson;
 }
-#navbar{
-    padding: 0 9% 0px;
+#navbar {
+  padding: 0 9% 0px;
 }
 #logo img {
   width: 190px;
@@ -48,10 +48,19 @@
 }
 
 .home .home-content {
-    flex: 1 1 500px;
+  flex: 1 1 500px;
 }
 
-.home .home-content h3{
-    font-size: 40px;
-    font-weight: 700;
+.home .home-content h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.top-section {
+  padding: 10px 11% 100px;
+}
+
+.top-section .row .card img {
+  width: 200px;
+  margin: auto;
 }
