@@ -13,7 +13,9 @@
   --main-color: black;
   --secondary-color: crimson;
 }
-
+#navbar{
+    padding: 0 9% 0px;
+}
 #logo img {
   width: 190px;
   margin-top: 3px;
@@ -32,4 +34,24 @@
 #navbar input:focus {
   border: 1px solid var(--secondary-color);
   box-shadow: none;
+}
+
+.home {
+  display: flex;
+}
+.home .img {
+  flex: 1 1 250px;
+}
+
+.home .img img {
+  width: 100%;
+}
+
+.home .home-content {
+    flex: 1 1 500px;
+}
+
+.home .home-content h3{
+    font-size: 40px;
+    font-weight: 700;
 }
