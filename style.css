@@ -14,6 +14,21 @@
   --main-color: black;
   --secondary-color: crimson;
 }
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar{
+  width: 10px;
+}
+
+
 .navbar-toggler {
   border: none;
 }
@@ -42,6 +57,7 @@
 
 .home {
   display: flex;
+  padding: 0 5%;
 }
 .home .img {
   flex: 1 1 250px;
@@ -77,5 +93,99 @@
 
 .menu {
   padding: 0 5%;
-  height: 100vh;
+}
+
+.line-container {
+  padding: 0 5%;
+}
+
+.line {
+  background-color: var(--secondary-color);
+  height: 2px;
+  width: 100%;
+}
+
+.order {
+  padding: 0 5%;
+}
+
+.order form > textarea {
+  resize: none;
+}
+
+.order .row .col-md-5 .card {
+  border: none;
+}
+.order .row .col-md-5 .card img {
+  width: 70%;
+  margin: auto;
+}
+
+.review {
+  padding: 0 5%;
+}
+.review .card {
+  border: none;
+}
+.review .card img {
+  width: 85%;
+  margin: auto;
+}
+
+#review div.rating-img img {
+  width: 130px;
+}
+
+.contact {
+  padding: 0 5%;
+}
+
+.contact .row .row-left {
+  background-color: #ff281b;
+}
+
+.contact .row textarea {
+  resize: none;
+}
+.line-footer {
+  background-color: grey;
+  height: 2px;
+  width: 100%;
+}
+footer {
+  padding: 0 5%;
+}
+footer .f-logo img{
+  width: 250px;
+}
+footer .f-logo i{
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+  margin-right: 15px;
+}
+footer .f-logo i:hover {
+  background-color: #ff281b;
+  color: white;
+
+}
+
+@media (max-width: 420px) {
+  #review div.rating-img img {
+    width: 110px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review .row .card img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .review .row .card img {
+    width: 70%;
+  }
 }
